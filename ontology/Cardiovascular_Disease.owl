@@ -1,0 +1,390 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mohammedalharbi/ontologies/2020/7/untitled-ontology-4#"
+     xml:base="http://www.semanticweb.org/mohammedalharbi/ontologies/2020/7/untitled-ontology-4"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:www="http://www.example.com#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mohammedalharbi/ontologies/2020/7/untitled-ontology-4"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.example.com#Code_description_and_permissible_values -->
+
+    <owl:AnnotationProperty rdf:about="http://www.example.com#Code_description_and_permissible_values"/>
+
+
+
+    <!-- http://www.example.com#Data_Concept -->
+
+    <owl:AnnotationProperty rdf:about="http://www.example.com#Data_Concept"/>
+
+
+
+    <!-- http://www.example.com#Data_Type -->
+
+    <owl:AnnotationProperty rdf:about="http://www.example.com#Data_Type"/>
+
+
+
+    <!-- http://www.example.com#Definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.example.com#Definition"/>
+
+
+
+    <!-- http://www.example.com#Maximum_field_size -->
+
+    <owl:AnnotationProperty rdf:about="http://www.example.com#Maximum_field_size"/>
+
+
+
+    <!-- http://www.example.com#Reference_ID -->
+
+    <owl:AnnotationProperty rdf:about="http://www.example.com#Reference_ID"/>
+
+
+
+    <!-- http://www.example.com#Source -->
+
+    <owl:AnnotationProperty rdf:about="http://www.example.com#Source"/>
+
+
+
+    <!-- http://www.example.com#Usage -->
+
+    <owl:AnnotationProperty rdf:about="http://www.example.com#Usage"/>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#string -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2001/XMLSchema#string">
+        <rdfs:comment>Burden of Disease Risk information ,CVD, Hypertension</rdfs:comment>
+    </rdf:Description>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.example.com#Admission_due_to_Hypertension_code_description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com#Admission_due_to_Hypertension_code_description">
+        <rdfs:domain rdf:resource="http://www.example.com#Admission_due_to_Hypertension"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.example.com#Code_description_and_permissible_values"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">6</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.example.com#Code_Description_and_Permissible_Values_date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com#Code_Description_and_Permissible_Values_date">
+        <rdfs:domain rdf:resource="http://www.example.com#Year_of_Diagnosis_of_Hypertension"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.example.com#Code_description_and_permissible_values -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com#Code_description_and_permissible_values">
+        <rdfs:domain rdf:resource="http://www.example.com#Hypertension_Classification"/>
+        <rdfs:domain rdf:resource="http://www.example.com#Hypertension_Patient_Service_location"/>
+        <rdfs:domain rdf:resource="http://www.example.com#Hypertension_Therapy_Type"/>
+        <rdfs:domain rdf:resource="http://www.example.com#Hypertension_with_Complications"/>
+        <rdfs:domain rdf:resource="http://www.example.com#Resistant_Hypertension"/>
+        <rdfs:domain rdf:resource="http://www.example.com#Type_of_Angina"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.example.com#Code_description_and_permissible_values"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.example.com#Date_created -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com#Date_created">
+        <rdfs:domain rdf:resource="http://www.example.com#Admission_due_to_Hypertension"/>
+        <rdfs:domain rdf:resource="http://www.example.com#Hypertension_Classification"/>
+        <rdfs:domain rdf:resource="http://www.example.com#Hypertension_Patient_Service_location"/>
+        <rdfs:domain rdf:resource="http://www.example.com#Hypertension_Therapy_Type"/>
+        <rdfs:domain rdf:resource="http://www.example.com#Hypertension_with_Complications"/>
+        <rdfs:domain rdf:resource="http://www.example.com#Resistant_Hypertension"/>
+        <rdfs:domain rdf:resource="http://www.example.com#Year_of_Diagnosis_of_Hypertension"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!-- http://www.example.com#Date_updated -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.com#Date_updated">
+        <rdfs:domain rdf:resource="http://www.example.com#Admission_due_to_Hypertension"/>
+        <rdfs:domain rdf:resource="http://www.example.com#Hypertension_Classification"/>
+        <rdfs:domain rdf:resource="http://www.example.com#Hypertension_Patient_Service_location"/>
+        <rdfs:domain rdf:resource="http://www.example.com#Hypertension_Therapy_Type"/>
+        <rdfs:domain rdf:resource="http://www.example.com#Hypertension_with_Complications"/>
+        <rdfs:domain rdf:resource="http://www.example.com#Resistant_Hypertension"/>
+        <rdfs:domain rdf:resource="http://www.example.com#Year_of_Diagnosis_of_Hypertension"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+    <!-- http://www.example.com#Admission_due_to_Hypertension -->
+
+    <owl:Class rdf:about="http://www.example.com#Admission_due_to_Hypertension">
+        <rdfs:subClassOf rdf:resource="http://www.example.com#Hypertension_Patient"/>
+        <www:Code_description_and_permissible_values rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Codes used are:
+6N = Total count per fiscal year</www:Code_description_and_permissible_values>
+        <www:Code_description_and_permissible_values rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The recorded number of patient whose main reason of
+admission is to manage Hypertension and provide close
+monitoring.</www:Code_description_and_permissible_values>
+        <www:Data_Concept rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Burden of Disease Information, CVD, Admission due to
+hypertension</www:Data_Concept>
+        <www:Reference_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GA007</www:Reference_ID>
+        <www:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saudi Health Council</www:Source>
+        <www:Usage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is used to report Admission due to hypertension</www:Usage>
+    </owl:Class>
+
+
+
+    <!-- http://www.example.com#Cardiovascular_disease -->
+
+    <owl:Class rdf:about="http://www.example.com#Cardiovascular_disease"/>
+
+
+
+    <!-- http://www.example.com#Hypertension_Classification -->
+
+    <owl:Class rdf:about="http://www.example.com#Hypertension_Classification">
+        <rdfs:subClassOf rdf:resource="http://www.example.com#Hypertension_Patient"/>
+        <www:Code_description_and_permissible_values rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Codes used are:
+0 = Normal
+1 = Pre- Hypertension
+2 = Stage 1 Hypertension
+3 = Stage 2 Hypertension</www:Code_description_and_permissible_values>
+        <www:Data_Concept rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Burden of Disease CVD ,Hypertension classification</www:Data_Concept>
+        <www:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identifies a person with or at risk of hypertension</www:Definition>
+        <www:Reference_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GA003</www:Reference_ID>
+        <www:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Palestinian health data dictionary second edition,2005</www:Source>
+        <www:Usage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This element is used in public health, health care and clinic
+settings to report data related to one of the chronic illnesses
+that are considered a high burden on the Saudi health system.
+The Staging of the severity of hypertension and treating plan
+with pharmacological or non-pharmacological or both,
+According to the stage. Confirming the diagnosis of HTN is
+based on the latest guidelines issued by the USA JNC 8 report
+2014 which confirms Hypertension at a subsequent visit one to
+four weeks after the first.2 If blood pressure is very high (e.g.,
+systolic 180 mmHg or higher), or timely follow-up unrealistic,
+treatment can be started after just one set of measurements.
+Hypertension classification is based on the following JNC 7
+Classification of Blood Pressure:
+Normal = Systolic &lt;120 and Diastolic &lt;80
+Prehypertension = Systolic 120–139 or Diastolic 80–89
+Hypertension, Stage 1 = Systolic 140–159 or Diastolic 90–99
+Hypertension, Stage 2 = Systolic ≥160 or Diastolic ≥100</www:Usage>
+    </owl:Class>
+
+
+
+    <!-- http://www.example.com#Hypertension_Patient -->
+
+    <owl:Class rdf:about="http://www.example.com#Hypertension_Patient">
+        <rdfs:subClassOf rdf:resource="http://www.example.com#Cardiovascular_disease"/>
+        <www:Code_description_and_permissible_values rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Codes Used are:
+9999 = Not stated/inadequately described</www:Code_description_and_permissible_values>
+        <www:Data_Concept rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Burden of Disease Risk information ,CVD, Hypertension</www:Data_Concept>
+        <www:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">When systolic blood pressure is equal to or above 140 mm hg and /or a diastolic blood pressure equal to or above 90 mm hg the blood pressure is considered to be raised or high.</www:Definition>
+        <www:Reference_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GA001</www:Reference_ID>
+        <www:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">World Health organization</www:Source>
+    </owl:Class>
+
+
+
+    <!-- http://www.example.com#Hypertension_Patient_Service_location -->
+
+    <owl:Class rdf:about="http://www.example.com#Hypertension_Patient_Service_location">
+        <rdfs:subClassOf rdf:resource="http://www.example.com#Hypertension_Patient"/>
+        <www:Code_description_and_permissible_values rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Codes used are:
+1 = Primary Health care center clinic
+2 = Hospital Emergency Room
+3 = Hospital Outpatient</www:Code_description_and_permissible_values>
+        <www:Data_Concept rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Burden of Disease Information CVD, Hypertension Patient Service Location</www:Data_Concept>
+        <www:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is the code used to identify service location of
+hypertension patient</www:Definition>
+        <www:Reference_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GA006</www:Reference_ID>
+        <www:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saudi Health Council</www:Source>
+        <www:Usage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This element is to report the location of management for
+Hypertension patient. This will help in analysis of service
+cost and service development</www:Usage>
+    </owl:Class>
+
+
+
+    <!-- http://www.example.com#Hypertension_Therapy_Type -->
+
+    <owl:Class rdf:about="http://www.example.com#Hypertension_Therapy_Type">
+        <rdfs:subClassOf rdf:resource="http://www.example.com#Hypertension_Patient"/>
+        <www:Code_description_and_permissible_values rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Codes used are:
+0 = Lifestyle modifications
+1 = One drug
+2 = Two drugs
+3 = Three drugs</www:Code_description_and_permissible_values>
+        <www:Data_Concept rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Burden of Disease Information CVD, Hypertension Therapy Type</www:Data_Concept>
+        <www:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The type of hypertension therapy the person is currently using
+or receiving.</www:Definition>
+        <www:Reference_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GA005</www:Reference_ID>
+        <www:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Palestinian Health Data Dictionary Second edition, 2005</www:Source>
+        <www:Usage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This element is to report the management of hypertension
+patient which will help in analysis of service cost and its
+development. It will also collect the feedback on patients who
+are put on lifestyle modification versus those who were treated
+by pharmaceutical products and the Monitoring of the
+response to either method of treatment.</www:Usage>
+    </owl:Class>
+
+
+
+    <!-- http://www.example.com#Hypertension_with_Complications -->
+
+    <owl:Class rdf:about="http://www.example.com#Hypertension_with_Complications">
+        <rdfs:subClassOf rdf:resource="http://www.example.com#Hypertension_Patient"/>
+        <www:Code_description_and_permissible_values rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Codes used are:
+0 = Without complications
+1 = With Ischemic Heart Diseases
+2 = With Congestive Heart Failure
+3 = With Stroke
+4 = With Renal impairment
+5 = With Visual impairment
+9 = Unknown</www:Code_description_and_permissible_values>
+        <www:Data_Concept rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Burden of Disease Risk Information, CVD, Hypertension with
+Complications</www:Data_Concept>
+        <www:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">These are the result of persistent elevated blood pressure,
+Causing secondary illness/disease.</www:Definition>
+        <www:Reference_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GA004</www:Reference_ID>
+        <www:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Saudi Health Council</www:Source>
+        <www:Usage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This element is to report the cases of hypertension that Suffered
+a secondary illness due to hypertension. It should
+allow multiple entries per patient if more than one complication
+is noted.</www:Usage>
+    </owl:Class>
+
+
+
+    <!-- http://www.example.com#Resistant_Hypertension -->
+
+    <owl:Class rdf:about="http://www.example.com#Resistant_Hypertension">
+        <rdfs:subClassOf rdf:resource="http://www.example.com#Hypertension_Patient"/>
+        <www:Code_description_and_permissible_values rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Codes used are:
+1=Resistant
+2=Non Resistant</www:Code_description_and_permissible_values>
+        <www:Data_Concept rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hypertension—Resistant Hypertension</www:Data_Concept>
+        <www:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Resistant hypertension is defined as the failure to achieve goal BP in patients who are adhering to full doses of an appropriate three-drug regimen that includes a diuretic.</www:Definition>
+        <www:Reference_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#int"></www:Reference_ID>
+        <www:Reference_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GA002</www:Reference_ID>
+        <www:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The seventh Report of the joint national committee JNC 7 on prevention, Detection, Evaluation, and Treatment of High Blood pressure 2004.</www:Source>
+        <www:Usage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is used to report total hypertension patients treated at a
+Healthcare facility according to their blood pressure
+resistance to treatment.</www:Usage>
+    </owl:Class>
+
+
+
+    <!-- http://www.example.com#Type_of_Angina -->
+
+    <owl:Class rdf:about="http://www.example.com#Type_of_Angina">
+        <rdfs:subClassOf rdf:resource="http://www.example.com#Hypertension_Patient"/>
+        <www:Code_description_and_permissible_values rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Codes used are:
+1 = Stable angina.
+2 = New-onset exertional Angina (Initial).
+3 = Angina of increasing frequency or
+duration or refractory to nitroglycerin (Crescendo)
+4 = Angina at rest
+5 = Variant angina (Prinzmetal angina).
+6 = Other</www:Code_description_and_permissible_values>
+        <www:Data_Concept rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Burden of Disease Information, CVD, Types of Angina, Code N</www:Data_Concept>
+        <www:Definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Identifies a person with or at risk of IHD</www:Definition>
+        <www:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Palestinian Health Data Dictionary Second edition, 2005</www:Source>
+        <www:Usage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is used to report the types of angina seen at the
+emergency room</www:Usage>
+    </owl:Class>
+
+
+
+    <!-- http://www.example.com#Year_of_Diagnosis_of_Hypertension -->
+
+    <owl:Class rdf:about="http://www.example.com#Year_of_Diagnosis_of_Hypertension">
+        <rdfs:subClassOf rdf:resource="http://www.example.com#Hypertension_Patient"/>
+        <www:Code_description_and_permissible_values rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The year a patient was first diagnosed as having
+hypertension</www:Code_description_and_permissible_values>
+        <www:Data_Concept rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Burden of Disease Information, CVD, Year of Diagnosis of
+Hypertension</www:Data_Concept>
+        <www:Reference_ID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GA008</www:Reference_ID>
+        <www:Source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Australian National Health Data Dictionary Version 14,
+2008</www:Source>
+        <www:Usage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Record the year that the patient was first diagnosed as
+having Hypertension</www:Usage>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
